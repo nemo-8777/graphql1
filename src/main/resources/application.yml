@@ -1,0 +1,11 @@
+graphql:
+  servlet:
+    mapping: /graphql
+    actuator-metrics: true			
+    corsEnabled: true
+
+spring:
+  graphql:
+    cors:
+      allowed-origins: '*'
+      allowed-methods: GET,HEAD,POST

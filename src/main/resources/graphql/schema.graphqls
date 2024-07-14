@@ -1,0 +1,22 @@
+type LoginResult{
+    resultcode: Int!
+    message: String!
+}
+
+type Query {
+    login(username:String!, password:String!): LoginResult
+}
+
+type todos{
+    results: [todo]
+}
+
+type todo{
+    todotitle: String
+    finished: String
+    deleted: String
+}
+
+type Mutation{
+    addTodos(todotitle: String): todo
+}
