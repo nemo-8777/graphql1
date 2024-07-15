@@ -9,8 +9,7 @@ import com.example.demo.model.LoginResult;
 public class LoginResolverImpl implements GraphQLQueryResolver{
 	public LoginResult login(String username, String password) {
 		LoginResult loginResult = new LoginResult();
-		
-		if(username == "username" && password == "password") {
+		if(username.equals("username") && password.equals("password")) {
 			loginResult.setResultcode(1);
 			loginResult.setMessage("success");
 		}else {
